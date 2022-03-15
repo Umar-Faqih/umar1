@@ -1,0 +1,93 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #363636;
+}
+
+.container{
+    border-radius: 5px;
+    margin: auto;
+    padding: 30px;
+    width: 700px;
+    background-image: linear-gradient(white, #535353);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 4)
+}
+
+h1{
+    font-weight: bold;
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    text-shadow: 0 0 20px #ffc320,
+                0 0 20px #fefcc9, 
+                 10px -10px 30px #feec85,
+                -20px -20px 40px #ffae34, 
+                  20px -40px 50px #ec760c, 
+                  -20px -60px 60px #cd4606, 
+                  0 -80px 70px #973716, 
+                  10px -90px 80px #451b0e;
+
+ /* (https://codepen.io/sandhikagalih/pen/YWyjjP) untuk macam macam shadow */
+
+}
+
+.gallery li{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    /* overflow: hidden; */
+    border: 5px solid #666;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gallery li a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+
+}
+
+.gallery li span{
+    color: #feec85;
+    text-shadow: 1px 1px 1px #666;
+    text-align: center;
+    line-height: 120px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color:rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: .3s;
+    transform: scale(0) rotate(0)
+}
+
+li img{
+    border-radius: 50%;
+    width: 120px;
+}
+
+/* clear */
+.clear{
+    clear: both;
+}
+
+/* overlay */
+.overlay{
+    top: 0;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+
+#gambar-1:target{
+    
+}
